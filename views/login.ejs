@@ -1,0 +1,41 @@
+<%- include('navbar') %>
+
+    <div class="container mt-4">
+      <div class="row m-0 p-0">
+          <div class="col-md-6 m-0 p-0">
+            <img src="images/img4.jpeg" class="lg1">
+          </div>
+          <div class="col-md-6 lg2">
+            <h3 class="text-center mt-4">Login Yourself!</h3>
+            <hr class="lg3">
+            <hr class="lg4">
+
+           
+            
+            <form action="/login" method="post" role="form" class="mt-5 p-5">
+              <% if(msg!=''){%>
+                <div class="alert alert-danger text-center" role="alert" >
+                  <b>
+                    <%= msg %>  </b></div>
+                    <% } %>
+              <div class="form-group">
+                <label for="exampleInputEmail1"><b>Username</b></label>
+                <input type="text" class="form-control" id="exampleInputEmail1" name="username" placeholder="Enter your Username">
+              </div>
+              <div class="form-group">
+                <label for="Password1"><b>Password</b></label>
+                <input type="password" class="form-control" id="Password1" name="password" autocomplete="on" placeholder="Enter your Password">
+              </div>
+              <button type="submit" class="btn lg5">Submit</button>
+              <hr class="lg3">
+
+            </form>
+            <div class="pl-5"><b>Don't have an account!</b><a href="/signup"><button class="btn ml-2 lg6">Sign Up</button></a></div>
+
+          </div>
+          </div>
+      </div>
+    </div>
+
+  </body>
+</html>

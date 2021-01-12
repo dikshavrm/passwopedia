@@ -1,0 +1,58 @@
+<%- include('header') %>
+
+
+
+      <h1 style="color:red"><% if(errors!=''){ %><%= errors.passwordCategory.msg %><% } %></h1>
+      <h1 style="color:red"><% if(success!=''){ %><%= success %><% } %></h1>
+<!-- 
+
+    <h2>Edit Password category List</h2>
+    <form action="/passwordCategory/edit" method="post" role="form" id="loginform">
+       <input type="hidden" name="id" value="<%= id %>">
+        <div class="form-group">
+
+          <label for="exampleInputEmail1">New Category Name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" name="passwordCategory" value="<%= records.password_category %>" placeholder="Your Password Category name">
+        </div>
+        <button type="submit" class="btn btn-success">Update</button>
+
+    </form>
+
+    <a href="/passwordCategory">View all category List! </a>
+    <h1>Logged In as: <% if(loginUser){ %><%= loginUser %><% } %></h1> -->
+
+
+    <div class="container mt-5">
+
+      <div class="row">
+        <div class="col-md-2">
+    
+        </div>
+        <div class="col-md-8">
+          <div class="text-center dash1">Edit Password Category</div>
+          <div class="dash2">
+    
+          <h1 style="color:red"><% if(errors!=''){ %><%= errors.passwordCategory.msg %><% } %></h1>
+          <h1 style="color:red"><% if(success!=''){ %><%= success %><% } %></h1>
+    
+    
+        <!-- <h2>Password category List</h2> -->
+        <form action="/passwordCategory/edit" method="post" role="form" id="loginform" class="m-5">
+           
+          <input type="hidden" name="id" value="<%= id %>">
+        <div class="form-group">
+
+          <label for="exampleInputEmail1">New Category Name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" name="passwordCategory" value="<%= records.password_category %>" placeholder="Your Password Category name">
+        </div>
+            <button type="submit" class="btn rg1">Update</button>
+    
+        </form>
+      </div>
+      <div class="col-md-2">
+      </div>
+    
+      <div style="margin-left:40%;" class="mt-2"><a href="/passwordCategory"><button class="btn ml-2 dash3"><b>View all Category List! </b></button></a></div>
+    
+      </div>
+    </div>

@@ -1,0 +1,85 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
+  <body style="background-color: #8EAAB0;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #8EAAB0;">
+      <a class="navbar-brand" href="/" style="font-size:40px;font-weight:bold;font-family:Harlow Solid;">passwo<u><span style="color: #2B8D15  ;">Pedia</span></u></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/" style="font-weight:500;font-size:20px">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login" style="font-weight:500;font-size:20px">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="font-weight:500;font-size:20px">Features</a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+    <%- include('navbar') %>
+
+
+   <% if(msg!=''){%>
+    <div class="alert alert-info text-center" role="alert" >
+      <b>
+        <%= msg %>  </b></div>
+        <% } %>
+  
+    <!-- <p>Welcome to <%= title %></p> -->
+   
+    <div class="container">
+        <div class="row">
+
+
+          <div class="col-md-6 p-1">
+            <div class="p-4 lg2">
+              <h3 class="text-center mt-2">Signup!</h3>
+              <hr class="lg3">
+              <hr class="lg4">
+            <form action="/signup" method="post" role="form">
+                <div class="form-group">
+                  <label for="exampleInputEmail1"><b>Username</b></label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" name="username" required placeholder="Enter your Username">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1"><b>Email</b></label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" name="email" required placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1"><b>Password</b></label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" name="password" required placeholder="Enter your Password">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword2"><b>Confirm Password</b></label>
+                  <input type="password" class="form-control" id="exampleInputPassword2" name="confirmpassword" required placeholder="Confirm Password">
+                </div>
+                <button type="submit" class="btn rg1">Register</button>
+
+                <hr class="lg3">
+              </form>
+
+            <div class="pl-5"><b>Already have an account!</b><a href="/login"><button class="btn ml-2 lg6">Login</button></a></div>
+          </div>
+        </div>
+          <div class="col-md-6">
+            <img src="images/img5.png" class="mt-5 w-100 h-auto">
+          </div>
+
+
+        </div>
+      </div>
+    
+  </body>
+</html>

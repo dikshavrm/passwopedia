@@ -1,0 +1,72 @@
+<%- include('header') %>
+
+      <div class="text-center" style="font-size: 25px;background-color: #0C4050;color:white"><marquee><i>Hello <% if(loginUser){ %><%= loginUser %><% } %>, Welcome to your dashboard!</i></marquee></div>
+
+      <div class="container">
+            <div class="row">
+                  <div class="col-md-6">
+                        <img src="images/img6.png" style="width:100%;height:600px;">
+                  </div>
+                  <div class="col-md-6 mt-5">
+                        <div class="container mt-5">
+                              <div class="row pt-5">
+                                    <div class="col-md-6">
+                                          <a href="/add-new-password"><div style="color:white;background-color: #0C4050;padding: 20px;font-weight: bold;font-size: 25px;text-align: center;font-family: Cambria;" class="zoom">Add New Password</div></a>
+                                    </div>
+                                    <div class="col-md-6">
+                                          <a href="/view-all-password"><div style="color:white;background-color: #17500C;padding: 20px;font-weight: bold;font-size: 25px;text-align: center;font-family: Cambria;" class="zoom">View All Password</div></a>
+                                    </div>
+                              </div>
+                              <div class="row mt-5">
+                                    <div class="col-md-6">
+                                          <a href="/add-new-category"><div style="color:white;background-color: #B41E0C ;padding: 20px;font-weight: bold;font-size: 25px;text-align: center;font-family: Cambria;" class="zoom">Add New Category</div></a>
+                                    </div>
+                                    <div class="col-md-6">
+                                          <a href="/passwordCategory"><div style="color:white;background-color: #867612 ;padding: 20px;font-weight: bold;font-size: 25px;text-align: center;font-family: Cambria;" class="zoom">View All Category</div></a>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+<%- include('footer') %>
+
+
+<!--  -->
+  <!-- <body style="background-color: #EEC9C7;">
+  
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #EEC9C7;">
+      <a class="navbar-brand" href="/" style="font-size:40px;font-weight:bold;font-family:Harlow Solid;">passwo<u><span style="color: #2B8D15  ;">Pedia</span></u></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/" style="font-weight:500;font-size:20px">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Password Change
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/passwordCategory">Add new Category</a>
+              <a class="dropdown-item" href="/add-new-category">View all Category</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Password Details
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="add-new-password">Add new Password</a>
+              <a class="dropdown-item" href="view-all-password">View all Password</a>
+            </div>
+          </li>
+          <li>
+            <a class="nav-link" href="/logout">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
